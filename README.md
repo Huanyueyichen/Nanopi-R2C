@@ -1,7 +1,7 @@
-wan口回退旧版驱动
+1.稳定版wan口回退旧版驱动
 
-stable为5.4内核
+2.stable_稳定版为5.4内核+稳定版插件
 
-testing为5.10内核
+3.beta_测试版为5.10内核+最新插件
 
-添加telegram推送
+4.添加telegram推送
