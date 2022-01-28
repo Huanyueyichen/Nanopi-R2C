@@ -28,6 +28,9 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #rm -rf package/lean/luci-theme-netgear
 #rm -rf package/lean/luci-theme-ifit
 
+#删除默认包
+rm -rf package/lean/luci-app-aliyundrive-webdav
+
 #下载主题luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
