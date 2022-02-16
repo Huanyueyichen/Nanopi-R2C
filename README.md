@@ -5,3 +5,5 @@
 3.beta_测试版为5.10内核+最新插件
 
 4.添加telegram推送
+
+下载地址：https://github.com/Huanyueyichen/Nanopi-R2C/releases
