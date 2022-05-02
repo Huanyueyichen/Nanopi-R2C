@@ -14,4 +14,6 @@
 
 4.添加telegram推送
 
+5.添加comfast cf-811ac驱动
+
 下载地址：https://github.com/Huanyueyichen/Nanopi-R2C/releases
