@@ -66,8 +66,3 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a\set wireless.default_radio${devidx}.key=password' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 
-
-## 替换rtl8821cu驱动
-rm -rf package/kernel/rtl8821cu
-git clone https://github.com/brektrou/rtl8821CU.git rtl8821cu
-git checkout rtl8821cu
