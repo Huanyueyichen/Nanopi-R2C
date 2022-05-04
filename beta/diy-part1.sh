@@ -14,3 +14,10 @@ sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/
 ## R2C WAN口退回之前的驱动
 # git reset b1b36c86af6d9fa3ba57eb2140025d2039996b81 target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
 # git checkout target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
+
+
+
+## 替换rtl8821cu驱动
+rm -rf package/kernel/rtl8821cu
+git clone https://github.com/brektrou/rtl8821CU.git rtl8821cu
+git checkout rtl8821cu
