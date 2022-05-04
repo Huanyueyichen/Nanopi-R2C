@@ -17,3 +17,7 @@ sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/
 
 
 
+## 替换rtl8821cu驱动
+rm -rf package/kernel/rtl8821cu
+git clone https://github.com/brektrou/rtl8821CU.git package/kernel/rtl8821cu
+git checkout package/kernel/rtl8821cu
