@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-## arm机型,默认内核5.4，修改内核为5.10
-sed -i 's/PATCHVER:=5.15/PATCHVER:=5.10/g' target/linux/rockchip/Makefile
+## arm机型,默认内核5.15，修改内核为5.4
+sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/rockchip/Makefile
 
 
 ## R2C WAN口退回之前的驱动
