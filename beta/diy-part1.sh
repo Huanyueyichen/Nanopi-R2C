@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-## arm机型,默认内核5.10，修改内核为5.15
-sed -i 's/PATCHVER=5.10/PATCHVER=5.15/g' target/linux/rockchip/Makefile
+## arm机型,默认内核5.15，修改内核为5.10
+#sed -i 's/PATCHVER=5.15/PATCHVER=5.10/g' target/linux/rockchip/Makefile
 
 
 # 交换 LAN/WAN 口
