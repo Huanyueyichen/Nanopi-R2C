@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # 修改openwrt登陆地址,把下面的192.168.2.1修改成你想要的就可以了
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
@@ -51,3 +50,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #使用sed 在第四行后添加新字
 #sed -e 120a\set wireless.default_radio${devidx}.key=password package/kernel/mac80211/files/lib/wifi/mac80211.sh
 #sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a\set wireless.default_radio${devidx}.key=password' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
+
+##回退3月28日
+git reset --hard 1a86fc37114da97764e337908d05e0752941acb9
