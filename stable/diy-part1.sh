@@ -2,7 +2,7 @@
 
 
 ## arm机型,默认内核5.15，修改内核为5.10
-sed -i 's/PATCHVER=5.15/PATCHVER=5.10/g' target/linux/rockchip/Makefile
+sed -i 's/PATCHVER=5.15/PATCHVER=5.4/g' target/linux/rockchip/Makefile
 
 ##回退3月28日
 git reset --hard 1a86fc37114da97764e337908d05e0752941acb9
