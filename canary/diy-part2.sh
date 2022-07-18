@@ -1,15 +1,4 @@
 #!/bin/bash
-#
-# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
-#
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
-# https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part2.sh
-# Description: OpenWrt DIY script part 2 (After Update feeds)
-#
-
 
 # 修改openwrt登陆地址,把下面的192.168.2.1修改成你想要的就可以了
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
@@ -22,15 +11,12 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #sed -i "s/OpenWrt /星新课代表/g" package/lean/default-settings/files/zzz-default-settings
 
 #删除原默认主题
-rm -rf package/lean/luci-theme-argon
+#rm -rf package/lean/luci-theme-argon
 #rm -rf package/lean/luci-theme-bootstrap
 #rm -rf package/lean/luci-theme-material
 #rm -rf package/lean/luci-theme-netgear
 #rm -rf package/lean/luci-theme-ifit
 #rm -rf package/lean/luci-theme-neobird
-
-#删除默认包
-#rm -rf package/lean/luci-app-aliyundrive-webdav
 
 #下载主题luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
@@ -39,6 +25,7 @@ rm -rf package/lean/luci-theme-argon
 #git clone https://github.com/icaruspring/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit
 #git clone https://github.com/thinktip/luci-theme-neobird.git package/lean/luci-theme-neobird
+git clone https://github.com/kenzok78/luci-theme-argonne package/lean/luci-theme-argonne
 
 
 #取消原主题luci-theme-bootstrap为默认主题
@@ -64,5 +51,4 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #使用sed 在第四行后添加新字
 #sed -e 120a\set wireless.default_radio${devidx}.key=password package/kernel/mac80211/files/lib/wifi/mac80211.sh
 #sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a\set wireless.default_radio${devidx}.key=password' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-
 
